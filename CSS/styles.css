@@ -250,7 +250,7 @@ button {
 	text-align: center;
 	color: var(--secondary-text-color);
 	margin-top: 24px;
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 }
 
 .modal-form {
@@ -260,31 +260,33 @@ button {
 	margin-right: auto;
 }
 
-.form-field {
-	display: flex;
-	flex-direction: column;
-}
-
 .form-label {
 	font-size: 12px;
 	line-height: 14px;
 	letter-spacing: 0.01em;
 	color: var(--helper-text);
-	margin-bottom: 4px;
 }
 
 .form-input {
+	padding: 0;
 	width: 100%;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	padding-left: 34px;
+	margin-top: 4px;
 	margin-bottom: 8px;
 }
 
 .form-comment {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
-	margin-bottom: 16px;
+	padding-left: 16px;
+	padding-top: 8px;
+	font-size: 12px;
+	letter-spacing: 0.01em;
+	margin-top: 4px;
+	margin-bottom: 20px;
 }
 
 textarea {
