@@ -561,7 +561,7 @@ button {
 	border: 1px solid #e7e9fc;
 	border-radius: 4px;
 	transition-property: color, background-color, box-shadow, border-color;
-	transition-duration: 2500ms;
+	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
