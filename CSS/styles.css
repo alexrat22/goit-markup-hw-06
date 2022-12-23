@@ -289,16 +289,23 @@ button {
 
 textarea {
 	resize: none;
+	padding: 0;
 	width: 360px;
 	height: 120px;
+}
+
+.policy-form {
+	display: flex;
+	align-items: center;
 }
 
 .policy-checkbox {
 	width: 16px;
 	height: 16px;
+	margin-right: 8px;
 }
 
-.label-policy {
+.policy-label {
 	font-size: 12px;
 	letter-spacing: 0.04em;
 	color: #757575;
