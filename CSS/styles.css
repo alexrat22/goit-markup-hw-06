@@ -246,7 +246,6 @@ button {
 
 .modal-title {
 	font-weight: 600;
-	line-height: 1.5;
 	text-align: center;
 	color: var(--secondary-text-color);
 	margin-top: 24px;
@@ -261,13 +260,9 @@ button {
 	margin-right: auto;
 }
 
-.form-field {
-	position: relative;
-}
-
 .form-label {
+	position: relative;
 	font-size: 12px;
-	line-height: 1.17;
 	letter-spacing: 0.01em;
 	color: var(--helper-text);
 }
@@ -289,29 +284,27 @@ button {
 
 .input-icon {
 	position: absolute;
-	top: 30px;
+	top: 26px;
 	left: 16px;
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field:focus-within > .input-icon {
+.form-label:focus-within > .input-icon {
 	fill: var(--accent-color);
 }
 
-.form-input:focus,
-.form-comment:focus {
-	outline: 1px solid var(--accent-color);
-	border: transparent;
-}
-
 .form-comment {
+	resize: none;
+	width: 360px;
+	height: 120px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	padding-left: 16px;
 	padding-top: 8px;
 	font-size: 12px;
+	line-height: 1.17;
 	letter-spacing: 0.01em;
 	margin-top: 4px;
 	margin-bottom: 16px;
@@ -321,11 +314,10 @@ button {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-textarea {
-	resize: none;
-	padding: 0;
-	width: 360px;
-	height: 120px;
+.form-input:focus,
+.form-comment:focus {
+	outline: 1px solid var(--accent-color);
+	border: 1px solid transparent;
 }
 
 .policy-checkbox {
