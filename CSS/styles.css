@@ -267,7 +267,7 @@ button {
 
 .form-label {
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 1.17;
 	letter-spacing: 0.01em;
 	color: var(--helper-text);
 }
@@ -281,6 +281,7 @@ button {
 	padding-left: 34px;
 	margin-top: 4px;
 	margin-bottom: 8px;
+	background-color: #fcfcfc;
 }
 
 .input-icon {
@@ -308,6 +309,7 @@ button {
 	letter-spacing: 0.01em;
 	margin-top: 4px;
 	margin-bottom: 16px;
+	background-color: #fcfcfc;
 }
 
 textarea {
@@ -319,20 +321,25 @@ textarea {
 
 .policy-checkbox {
 	appearance: none;
+	position: absolute;
 }
 
 .policy-icon {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 16px;
 	height: 16px;
 	border: 1.25px solid var(--secondary-text-color);
 	border-radius: 2px;
 	margin-right: 8px;
+	fill: #fcfcfc;
 }
 
 .policy-checkbox:checked + .policy-icon {
 	border-color: var(--accent-color);
 	background-color: var(--accent-color);
+	fill: var(--secondary-background-color);
 }
 
 .policy-label {
@@ -354,7 +361,6 @@ textarea {
 	padding-top: 16px;
 	padding-bottom: 16px;
 	margin-top: 24px;
-	margin-bottom: 24px;
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -363,10 +369,6 @@ textarea {
 	font-weight: 600;
 	letter-spacing: 0.04em;
 	color: var(--background-color);
-}
-
-.test {
-	padding: 0;
 }
 
 /* Features */
