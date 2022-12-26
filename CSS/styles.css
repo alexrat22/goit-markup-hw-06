@@ -323,8 +323,8 @@ button {
 
 .form-input:focus,
 .form-comment:focus {
-	outline: 1px solid var(--accent-color);
-	border: 1px solid transparent;
+	border: 1px solid var(--accent-color);
+	outline: transparent;
 }
 
 .policy-checkbox {
