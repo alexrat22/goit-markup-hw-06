@@ -216,18 +216,21 @@ button {
 	transform: translate(-50%, -50%);
 	width: 408px;
 	height: 579px;
+	padding-left: 30px;
+	padding-right: 18px;
 	background-color: #fcfcfc;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 }
 
 .modal-button {
+	position: absolute;
+	top: 24px;
+	right: 24px;
 	padding: 0;
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
-	margin-top: 24px;
-	margin-left: 360px;
 }
 
 .modal-icon {
@@ -248,14 +251,13 @@ button {
 	font-weight: 600;
 	text-align: center;
 	color: var(--secondary-text-color);
-	margin-top: 24px;
+	padding-top: 72px;
 	margin-bottom: 16px;
 }
 
 .modal-form {
 	display: flex;
 	flex-direction: column;
-	width: 360px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -265,6 +267,7 @@ button {
 	font-size: 12px;
 	letter-spacing: 0.01em;
 	color: var(--helper-text);
+	margin-bottom: 8px;
 }
 
 .form-input {
@@ -275,7 +278,6 @@ button {
 	border-radius: 4px;
 	padding-left: 34px;
 	margin-top: 4px;
-	margin-bottom: 8px;
 	background-color: #fcfcfc;
 	cursor: pointer;
 	transition-property: outline, border;
@@ -296,6 +298,10 @@ button {
 	fill: var(--accent-color);
 }
 
+.textarea-label {
+	margin-bottom: 16px;
+}
+
 .form-comment {
 	resize: none;
 	width: 360px;
@@ -308,7 +314,6 @@ button {
 	line-height: 1.17;
 	letter-spacing: 0.01em;
 	margin-top: 4px;
-	margin-bottom: 16px;
 	background-color: #fcfcfc;
 	cursor: pointer;
 	transition-property: outline, border;
@@ -651,7 +656,6 @@ button {
 	letter-spacing: 0.04em;
 	color: rgba(255, 255, 255, 0.6);
 	padding-left: 16px;
-	margin-top: 16px;
 	cursor: pointer;
 }
 
@@ -663,7 +667,6 @@ button {
 	background-color: var(--accent-color);
 	border-radius: 4px;
 	margin-left: 24px;
-	margin-top: 16px;
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -677,6 +680,7 @@ button {
 .input-form {
 	display: flex;
 	flex-direction: row;
+	margin-top: 16px;
 }
 
 .footer-button-title {
