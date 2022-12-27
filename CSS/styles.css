@@ -234,7 +234,7 @@ button {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	background-color: var(--footer-text);
-	transition-property: border, background-color;
+	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -251,7 +251,7 @@ button {
 
 .modal-button:hover,
 .modal-button:focus {
-	border: 1px solid var(--accent-hover-color);
+	border: transparent;
 	background-color: var(--accent-hover-color);
 	fill: var(--background-color);
 }
