@@ -6,6 +6,7 @@
 	--background-color: #ffffff;
 	--secondary-background-color: #f4f4fd;
 	--accent-color: #4d5ae5;
+	--accent-hover-color: #404bbf;
 	--hover-color: #31d0aa;
 }
 
@@ -230,21 +231,29 @@ button {
 	padding: 0;
 	width: 24px;
 	height: 24px;
-	border-radius: 50%;
-}
-
-.modal-icon {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
-	transition-property: border-color, box-shadow;
+	background-color: var(--footer-text);
+	transition-property: border, background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
-	border-color: #e7e9fc;
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.modal-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+	border: 1px solid var(--accent-hover-color);
+	background-color: var(--accent-hover-color);
+	fill: var(--background-color);
 }
 
 .modal-title {
@@ -321,6 +330,11 @@ button {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-comment::placeholder {
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
+
 .form-input:focus,
 .form-comment:focus {
 	border: 1px solid var(--accent-color);
@@ -386,7 +400,7 @@ button {
 
 .modal-button-send:hover,
 .modal-button-send:focus {
-	background: #404bbf;
+	background: var(--accent-hover-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -526,8 +540,16 @@ button {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	background-color: #4d5ae5;
+	background-color: var(--accent-color);
 	fill: var(--secondary-background-color);
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-employees-link:hover,
+.icon-employees-link:focus {
+	background-color: var(--accent-hover-color);
 }
 
 /* Customers */
