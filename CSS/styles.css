@@ -189,7 +189,7 @@ button {
 .hero-button:hover,
 .hero-button:focus {
 	color: var(--background-color);
-	background-color: #404bbf;
+	background-color: var(--accent-hover-color);
 	cursor: pointer;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -696,7 +696,7 @@ button {
 
 .footer-input-button:hover,
 .footer-input-button:focus {
-	background-color: #404bbf;
+	background-color: var(--accent-hover-color);
 }
 
 .input-form {
@@ -734,7 +734,7 @@ button {
 	background-color: var(--secondary-background-color);
 	cursor: pointer;
 	padding: 12px 24px;
-	border: 1px solid #e7e9fc;
+	border: 1px solid var(--footer-text);
 	border-radius: 4px;
 	transition-property: color, background-color, box-shadow, border-color;
 	transition-duration: 250ms;
@@ -788,7 +788,7 @@ button {
 	padding-top: 32px;
 	padding-bottom: 32px;
 	padding-left: 16px;
-	border: 0.5px solid #f4f4fd;
+	border: 0.5px solid var(--secondary-background-color);
 	border-top: none;
 }
 .portfolio-thumb {
